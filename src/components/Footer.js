@@ -25,7 +25,7 @@ export default function Footer() {
     <>
       {todos.length === 0 ? (
         <h2 style={{ textAlign: "center", color: "crimson" }}>
-          ยินดีด้วย คุณทำทุกอย่างเสร็จแล้ว
+          คุณไม่มีภารกิจที่ต้องทำ
         </h2>
       ) : (
         <div className="row">
@@ -39,7 +39,10 @@ export default function Footer() {
             />
             เลือกทั้งหมด
           </label>
-          <p>คุณมี {todos.filter(todo => todo.complete === false).length} อย่างที่ต้องทำ</p>
+          <p>
+            คุณมี {todos.filter((todo) => todo.complete === false).length}{" "}
+            อย่างที่ต้องทำ
+          </p>
           <button id="delete" onClick={handleDelete}>
             ลบ
           </button>
