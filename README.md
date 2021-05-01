@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Public Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://syp-todo-list-react.herokuapp.com/
 
 ## Available Scripts
 
